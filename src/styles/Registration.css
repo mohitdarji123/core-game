@@ -1,0 +1,146 @@
+.registration-page {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.registration-hero {
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(0, 255, 136, 0.1));
+}
+
+.registration-hero-content h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--primary-neon), var(--accent-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.registration-hero-content p {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+}
+
+.registration-content {
+  padding: 4rem 2rem;
+}
+
+/* Registration Type Selector */
+.registration-type-selector {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.type-btn {
+  padding: 2rem;
+  background: var(--card-bg);
+  border: 2px solid rgba(0, 255, 136, 0.3);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.type-btn:hover {
+  border-color: var(--primary-neon);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 255, 136, 0.2);
+}
+
+.type-btn.active {
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.15), rgba(0, 212, 255, 0.15));
+  border-color: var(--primary-neon);
+  box-shadow: 0 15px 40px rgba(0, 255, 136, 0.3);
+}
+
+.type-icon {
+  font-size: 3rem;
+}
+
+.type-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+}
+
+/* Registration Form */
+.registration-form {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  border-radius: 20px;
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+}
+
+.form-section {
+  margin-bottom: 3rem;
+}
+
+.form-section:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.form-section-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-neon);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid rgba(0, 255, 136, 0.2);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1.3rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .registration-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .registration-hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .registration-type-selector {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section-title {
+    font-size: 1.5rem;
+  }
+}
